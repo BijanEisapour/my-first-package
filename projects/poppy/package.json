@@ -1,6 +1,6 @@
 {
 	"name": "@bijaneisapour/poppy",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"description": "Make your elements POP!",
 	"author": "BijanProgrammer",
 	"keywords": [
@@ -16,5 +16,14 @@
 	},
 	"dependencies": {
 		"tslib": "^2.0.0"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BijanEisapour/my-first-package.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/BijanEisapour/my-first-package/issues"
+	},
+	"homepage": "https://github.com/BijanEisapour/my-first-package#readme"
 }
