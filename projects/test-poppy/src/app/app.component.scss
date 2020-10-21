@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
+
+	button {
+		background: #f5f5f5;
+		color: #232323;
+
+		padding: 1rem 2rem;
+
+		font-size: 1.8rem;
+
+		cursor: pointer;
+	}
+}

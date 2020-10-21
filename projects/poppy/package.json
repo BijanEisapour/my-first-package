@@ -1,0 +1,20 @@
+{
+	"name": "@bijaneisapour/poppy",
+	"version": "0.1.0",
+	"description": "Make your elements POP!",
+	"author": "BijanProgrammer",
+	"keywords": [
+		"angular",
+		"javascript",
+		"typescript",
+		"directive",
+		"shadow"
+	],
+	"peerDependencies": {
+		"@angular/common": "^10.0.14",
+		"@angular/core": "^10.0.14"
+	},
+	"dependencies": {
+		"tslib": "^2.0.0"
+	}
+}
