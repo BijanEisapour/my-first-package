@@ -1,4 +1,4 @@
-name: "npm publish"
+name: "Publish"
 
 on:
   release:
@@ -10,6 +10,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
     - name: setup node
       uses: actions/setup-node@v1
       with:
@@ -18,6 +26,12 @@ jobs:
 
     - name: npm install
       run: npm install
+
+    - name: npm install angular cli
+      run: npm install -g @angular/cli > /dev/null
+
+    - name: ng build
+      run: ng build --prod
 
     - name: cd to dist/poppy
       run: cd dist/poppy
