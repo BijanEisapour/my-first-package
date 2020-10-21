@@ -19,6 +19,9 @@ jobs:
     - name: npm install
       run: npm install
 
+    - name: cd to dist/poppy
+      run: cd dist/poppy
+
     - name: npm publish
       run: npm publish --access public
       env:
